@@ -1,0 +1,28 @@
+body {
+    background-color: #c8e0ec;
+}
+
+.container {
+    background-color:#c8e0ec;
+}
+
+h3, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+}
+
+/* .row .col-md-5 {
+    margin-top: 100px;
+} */
+
+h4 {
+    text-align: center;
+    margin-top: 1000px;
+}
+
+form {
+    text-align: center;
+}

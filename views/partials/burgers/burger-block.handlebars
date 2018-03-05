@@ -1,0 +1,8 @@
+<li>
+	<h3>{{burger_name}}</h3>
+		{{#if devoured}}
+			<button class="devoured" data-id="{{id}}" data-devour="{{devoured}}" disabled>Devoured</button>
+		{{else}}
+			<button class="devoured" data-id="{{id}}" data-devour="{{devoured}}">Devour It!</button>
+		{{/if}}
+</li>

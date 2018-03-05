@@ -10,14 +10,21 @@ function printQuestionMarks(num) {
 
   return arr.toString();
 }
-
+// Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
 
 	var arr = [];
 	for (var key in ob) {
-		arr.push(key + "=" + ob[key]);
-	}
-	return arr.toString();
+    var value = ob[key];
+		if (Object.hasOwnProperty.call(ob, key)) {
+      if (typeof value === "string" && value.indexOf(" ") >= 0) {
+          value = "'" + value + "'";
+      }
+   
+      arr.push(key + "=" + value);
+    }
+  }
+  return arr.toString();
 }
 
 
@@ -69,21 +76,8 @@ var orm = {
 
       cb(result);
     });
-  },
-  // deleteOne: function(table, condition, cb) {
-  //   var queryString = "DELETE FROM " + table;
-  //   queryString += " WHERE ";
-  //   queryString += condition;
-
-  //   connection.query(queryString, function(err, result) {
-  //     if (err) {
-  //       throw err;
-  //     }
-
-  //     cb(result);
-  //   });
-  // }
+  }
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model file
 module.exports = orm;

@@ -6,30 +6,34 @@
 	</div>
 
 	<div class="col-md-12">
-		<h1>Yammy Burger!</h1>
-		<p>Because your day will be better after have a delicious burger</p>
+		{{!-- <h1>Yummy Burger!</h1> --}}
+		<img src="/assets/img/yummy.png" alt="burger" class="img-responsive center-block">
+		<h3><strong>Because your day will be better after have a yummy burger</strong></h3>
 	</div>
-
+	<div class="row">   </div>
+	<div class="row">   </div>
 	<div class="row">
 		<div class="col-md-5">
-			<h4>Burgers to Eat</h4>
+			<h4><strong>Burgers to Eat</strong></h4>
 				<ul>
 					{{#each burgers}}
-	 					{{#unless this.devoured}}
-	  
-	    			{{/unless}}
-	  			{{/each}}
+	 					{{#unless devoured}}
+							<li>
+								{{>burgers/burger-block devoured=false}}
+							</li>
+	    				{{/unless}}
+	  				{{/each}}
 				</ul>
 		</div>
 
 		<div class="col-md-2"></div>
 
 		<div class="col-md-5">
-			<h4>Eaten Burgers!</h2>
+			<h4><strong>Eaten Burgers!</strong></h2>
 				<ul>
 	  			{{#each burgers}}
-	    			{{#if this.devoured}}
-	     
+	    			{{#if devoured}}
+	     				{{>burgers/burger-block devoured=true}}
 	    			{{/if}}
 	  			{{/each}}
 				</ul>
@@ -48,3 +52,4 @@
 			</form>
 		</div>
 	</div>
+</div>
