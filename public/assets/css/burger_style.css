@@ -1,5 +1,5 @@
 body {
-    background-color: #c8e0ec;
+    background-color: transparent;
 }
 
 .container {
@@ -27,7 +27,7 @@ form {
     text-align: center;
 }
 
-.burgerAvailable {
+.change-devoured {
  	font-size: 20px;
  	text-align: center;
  	border-radius: 10px;
