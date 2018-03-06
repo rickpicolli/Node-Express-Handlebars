@@ -22,15 +22,15 @@ Please check out the launched app on Heroku [here](https://safe-basin-74431.hero
 
 If you prefer to run the application locally, clone this repository with the following command.
 
-	`git clone https://github.com/rickpicolli/Node-Express-Handlebars.git`
+	git clone https://github.com/rickpicolli/Node-Express-Handlebars.git
 	
 Next, install the application dependencies.
 
-	`npm install`
+	npm install
 	
 Finally, run the node server locally.
 
-	`node server.js`
+	node server.js
 	
 Now, open the local application on port 3000 at the URL: `http://localhost:3000/`.
 
