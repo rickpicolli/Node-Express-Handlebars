@@ -13,11 +13,6 @@ h3, h2 {
 h2 {
     font-family: 'Indie Flower', cursive;
 }
-
-/* .row .col-md-5 {
-    margin-top: 100px;
-} */
-
 h4 {
     text-align: center;
     margin-top: 1000px;
@@ -25,6 +20,10 @@ h4 {
 
 form {
     text-align: center;
+}
+
+img {
+	width: 100%;
 }
 
 .change-devoured {
@@ -46,4 +45,20 @@ form {
  	border-radius: 10px; 	
  	background-color: lightgrey;
  	border: none;
+ }
+
+ #burger_name {
+ 	width: 300px;
+ 	height: 80px;
+ 	border-radius: 10px;
+ }
+
+ #add-burger {
+ 	vertical-align: middle;
+ 	margin-bottom: 100px;
+ }
+
+ .btn-success {
+ 	margin-bottom: 500px;
+ 	vertical-align: middle;
  }
